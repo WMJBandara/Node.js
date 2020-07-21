@@ -1,0 +1,20 @@
+<h1>{{ title }}</h1>
+<p>Welcome to {{ title }}</p>
+<section>
+	<header class="major">
+		<h2>Genres</h2>
+	</header>
+    <div class="features">
+        {{#each genres}}
+            <hr>
+            <article>
+			{{!-- <span class="icon fa-gem"></span> --}}
+				<div class="content">
+					<h3>{{this.Id}}</h3>
+					<p>{{this.Name}}</p>
+                    <p>{{this.CreatedDate}}</p>
+                </div>
+			</article>
+        {{/each}}
+    </div>
+</section>
